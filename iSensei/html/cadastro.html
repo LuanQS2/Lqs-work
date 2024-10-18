@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>iSensei Cadastre-se</title>
+</head>
+<body>
+    <form id="formularioCadastro">
+
+        <h3>Cadastre-se e receba uma condição especial de lançamento 🎁</h3>
+
+        <label class="label" for="nomeEquipe">Nome da Equipe</label>
+        <input type="text" id="nomeEquipe" name="nomeEquipe" placeholder="Digite aqui" required>
+    
+        <label class="label" for="modalidade">Modalidade(s) de Luta(s) da Academia</label>
+        <input type="text" id="modalidade" name="modalidade" placeholder="Digite aqui" required>
+    
+        <div class="esta-cidade">
+            <div class="estado">
+                <label class="label"  for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="cidade-container">
+                <label class="label" for="cidade">Cidade</label>
+                <select id="cidade" name="cidade" required>
+                    <option value="">Selecione</option>
+                </select>
+            </div>
+        </div>
+        
+        <label class="label" for="nomeResponsavel">Nome do Responsável</label>
+        <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Digite aqui" required>
+    
+        <label class="label"  for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 90000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
+    
+        <label class="label"  for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+    
+        <label class="label"  for="comoConheceu">Como ficou sabendo do iSensei?</label>
+        <select id="comoConheceu" name="comoConheceu" required>
+            <option value="">Selecione</option>
+            <option value="Pesquisa no Google">Pesquisa no Google</option>
+            <option value="Indicação de Amigo">Indicação de Amigo</option>
+            <option value="Propaganda Patrocinada no Instagram">Propaganda Patrocinada no Instagram</option>
+            <option value="Propaganda Patrocinada no Youtube">Propaganda Patrocinada no Youtube</option>
+            <option value="Divulgação pelo site iLutas">Divulgação pelo site iLutas</option>
+            <option value="Divulgação pelo Instagram iLutas">Divulgação pelo Instagram iLutas</option>
+            <option value="Divulgação pelo Instagram no Perfil Jiu-Jitsu Brasil">Divulgação pelo Instagram no Perfil Jiu-Jitsu Brasil</option>
+            <option value="Divulgação pelo Instagram no Perfil Jiulife">Divulgação pelo Instagram no Perfil Jiulife</option>
+            <option value="Propaganda via Whats">Propaganda via Whats</option>
+            <option value="Propaganda via E-mail">Propaganda via E-mail</option>
+        </select>
+    
+        <div class="button-btn"><button type="submit">Salvar</button></div>
+    </form>
+    
+    <div id="mensagemSucesso" style="display:none;">
+        Cadastro realizado com sucesso!
+    </div>
+    
+    <script src="../js/cadastro.js"></script>
+    <script src="../js/cidades.js"></script>
+</body>
+</html>

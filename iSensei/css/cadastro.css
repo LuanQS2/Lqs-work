@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010101;
+    width: 100%;
+    height: 100vh;
+    font-family: Krona One;
+    overflow-x: hidden;
+    position: fixed;
+} 
+
+#formularioCadastro {
+    width: 410px;
+    height: 835px;
+    border-radius: 10px;
+    background: #FFF;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 740px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+h3{
+    color: #000;
+    font-family: "Krona One";
+    font-size: 14px;
+    font-weight: 400;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.label {
+    color: var(--Preto, #121111);
+    font-family: "Krona One";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+} 
+
+input {
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #F7F8F9;
+    width: 355px;
+    height: 46px;
+    margin-bottom: 15px;
+}
+
+.esta-cidade {
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.estado{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.cidade-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#estado {
+    width: 161px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #F7F8F9;
+}
+
+#cidade {
+    width: 179px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #F7F8F9;
+}
+
+#comoConheceu {
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #F7F8F9;
+    width: 355px;
+    height: 46px;
+}
+
+.button-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.button-btn button {
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #000;
+    color: #FFF;
+    width: 355px;
+    height: 46px;
+    cursor: pointer;
+}
+
+input:focus, 
+select:focus {
+    outline: none;
+}
+
+@media (max-width: 1438px) {
+    #formularioCadastro {
+        width: 410px;
+        height: 605px;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex; 
+        flex-direction: column;
+        margin-left: 500px;
+        padding: 40px;
+        margin-top: 15px;
+    }
+    
+    .label {
+        font-size: 14px;
+    }
+
+    input {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8ECF4;
+        background: #F7F8F9;
+        width: 355px;
+        height: 86px;
+    }
+
+    .button-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tela de 1280px */
+@media (max-width: 1280px) {
+    #formularioCadastro {
+        width: 410px;
+        height: 605px;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex; 
+        flex-direction: column;
+        margin-left: 500px;
+        padding: 40px;
+        margin-top: 15px;
+    }
+    
+    .label {
+        font-size: 14px;
+    }
+
+    input {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8ECF4;
+        background: #F7F8F9;
+        width: 355px;
+        height: 86px;
+    }
+
+    .button-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tela de 884px */
+@media (max-width: 884px) {
+    #formularioCadastro {
+        width: 410px;
+        height: 605px;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex; 
+        flex-direction: column;
+        margin-left: 250px;
+        padding: 40px;
+        margin-top: 150px;
+    }
+    
+    .label {
+        font-size: 14px;
+    }
+
+    input {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8ECF4;
+        background: #F7F8F9;
+        width: 355px;
+        height: 86px;
+    }
+
+    .button-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+    
+}
+
+/* Tela de 480px */
+@media (max-width: 480px) {
+    #formularioCadastro {
+        width: 400px;
+        height: 605px;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex; 
+        flex-direction: column;
+        margin-left: 15px;
+        padding: 35px;
+        margin-top: 70px;
+    }
+    
+    .label {
+        font-size: 14px;
+    }
+
+    input {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8ECF4;
+        background: #F7F8F9;
+        width: 355px;
+        height: 86px;
+    }
+
+    .button-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tela de 360px */
+@media (max-width: 400px) {
+    #formularioCadastro {
+        width: 370px;
+        height: 605px;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex; 
+        flex-direction: column;
+        margin-left: 16px;
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    h3 {
+        width: 330px;
+    }
+    
+    .label {
+        font-size: 14px;
+    }
+
+    input {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8ECF4;
+        background: #F7F8F9;
+        width: 320px;
+        height: 86px;
+    }
+
+    .button-btn {
+        margin-top: 20px;
+    }
+
+    select {
+        margin-bottom: 10px;
+    }
+
+    #estado, #cidade {
+        width: 160px;
+    }
+
+    #comoConheceu {
+        width: 320px;
+    }
+
+}
